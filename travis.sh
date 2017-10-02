@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Copyright 2016 Google Inc. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,22 +13,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-sudo: required
-language: java
-jdk:
-  - oraclejdk8
-addons:
-  apt:
-    packages:
-      - expect
-before_install:
-  - openssl aes-256-cbc -K $encrypted_c9b056f6a4fd_key -iv $encrypted_c9b056f6a4fd_iv -in service-account.json.enc -out service-account.json -d && export GOOGLE_APPLICATION_CREDENTIALS="$(pwd)/service-account.json"
-  - export GOOGLE_CLOUD_PROJECT=cloud-samples-tests
-install: sudo ./setup_tests.sh
-script: ./travis.sh
-after_success:
-  - mvn clean cobertura:cobertura coveralls:report
-branches:
-  only:
-  - master
-  - gcloud
+set -e
+set -x
+# Set pipefail so that `egrep` does not eat the exit code.
+set -o pipefail
+
+GOOGLE_CLOUD_SDK_ROOT="$(gcloud --format='value(installation.sdk_root)' info)"
+
+mvn --batch-mode clean verify | egrep -v "(^\[INFO\] Download|^\[INFO\].*skipping)"
+
+# Run tests using App Engine local devserver.
+test_localhost() {
+  if [[ ! -d java-repo-tools ]]; then
+		git clone https://github.com/GoogleCloudPlatform/java-repo-tools.git
+	fi
+  ./java-repo-tools/scripts/test-localhost.sh appengine:run . -- -DcloudSdkPath="$GOOGLE_CLOUD_SDK_ROOT"
+}
+test_localhost
+

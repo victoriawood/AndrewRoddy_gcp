@@ -1,60 +1,59 @@
-# Getting started with Node.js on Google Cloud Platform
+# Hello Google App Engine for Java™
 
-[![Build Status][travis-badge]][travis-link]
-[![Coverage Status][coveralls-badge]][coveralls-link]
+[![Build
+Status](https://travis-ci.org/GoogleCloudPlatform/appengine-try-java.svg?branch=master)](https://travis-ci.org/GoogleCloudPlatform/appengine-try-java)
 
-This repository contains the complete sample code for the
-[Node.js Getting Started on Google Cloud Platform][getting-started] tutorials.
-Please refer to the tutorials for instructions on configuring, running, and
-deploying these samples.
+This sample shows you how to deploy a simple "Hello World" application to
+[Google App Engine](https://cloud.google.com/appengine/docs/java/).
 
-The code for each tutorial is in an individual folder in this repository.
+## Before you begin
 
-Tutorial | Folder
----------|-------
-[Hello world][step-1] | [1-hello-world][step-1-code]
-[Structured data][step-2] | [2-structured-data][step-2-code]
-[Cloud Storage][step-3] | [3-binary-data][step-3-code]
-[Authenticating users][step-4] | [4-auth][step-4-code]
-[Logging app events][step-5] | [5-logging][step-5-code]
-[Using Cloud Pub/Sub][step-6] | [6-pubsub][step-6-code]
-[Deploying to Google Compute Engine][step-7] | [7-gce][step-7-code]
+1.  Download and install the [Google Cloud
+    SDK](https://cloud.google.com/sdk/docs/).
+1.  [Install and configure Apache Maven](http://maven.apache.org/index.html).
+1.  [Create a new Google Cloud Platform project, or use an existing
+		one](https://console.cloud.google.com/project).
+1.  Initialize the Cloud SDK.
+
+        gcloud init
+
+1.  Install the Cloud SDK `app-engine-java` component.
+
+        gcloud components install app-engine-java
+
+## Deploying to App Engine
+
+To run the application locally, use the [Maven App Engine
+plugin](https://cloud.google.com/appengine/docs/java/tools/using-maven).
+
+    mvn clean appengine:run
+
+View the app at [localhost:8080](http://localhost:8080).
+
+To deploy the app to App Engine, run
+
+    mvn clean appengine:deploy
+
+After the deploy finishes, you can view your application at
+`https://YOUR_PROJECT.appspot.com`, where `YOUR_PROJECT` is your Google Cloud
+project ID. You can see the new version deployed on the [App Engine section of
+the Google Cloud Console](https://console.cloud.google.com/appengine/versions).
+
+## Next steps
+
+1.  Read the [App Engine
+    documentation](https://cloud.google.com/appengine/docs/java/).
+1.  Explore the other [Google Cloud Platform sample
+    applications](https://github.com/GoogleCloudPlatform/java-docs-sample) for
+    Java™.
 
 ## Contributing changes
 
 * See [CONTRIBUTING.md](CONTRIBUTING.md)
 
-### Run the tests
-
-* Make sure you're authenticated with the gcloud sdk and your gcloud project
-has enabled all the APIs used by these tutorials.
-* Make sure you've got the required environment variables set. (Take a look at
-the various config.js files.)
-* `git clone git@github.com:GoogleCloudPlatform/nodejs-getting-started.git`
-* `cd nodejs-getting-started`
-* `npm install`
-* `npm test`
-
-## Licensing
+* ## Licensing
 
 * See [LICENSE](LICENSE)
 
-[travis-badge]: https://travis-ci.org/GoogleCloudPlatform/nodejs-getting-started.svg
-[travis-link]: https://travis-ci.org/GoogleCloudPlatform/nodejs-getting-started
-[coveralls-badge]: https://codecov.io/github/GoogleCloudPlatform/nodejs-getting-started/coverage.svg?branch=master
-[coveralls-link]: https://codecov.io/github/GoogleCloudPlatform/nodejs-getting-started?branch=master
-[getting-started]: http://cloud.google.com/nodejs/getting-started
-[step-1]: https://cloud.google.com/nodejs/getting-started/hello-world
-[step-1-code]: https://github.com/GoogleCloudPlatform/nodejs-getting-started/tree/master/1-hello-world
-[step-2]: https://cloud.google.com/nodejs/getting-started/using-structured-data
-[step-2-code]: https://github.com/GoogleCloudPlatform/nodejs-getting-started/tree/master/2-structured-data
-[step-3]: https://cloud.google.com/nodejs/getting-started/using-cloud-storage
-[step-3-code]: https://github.com/GoogleCloudPlatform/nodejs-getting-started/tree/master/3-binary-data
-[step-4]: https://cloud.google.com/nodejs/getting-started/authenticate-users
-[step-4-code]: https://github.com/GoogleCloudPlatform/nodejs-getting-started/tree/master/4-auth
-[step-5]: https://cloud.google.com/nodejs/getting-started/logging-application-events
-[step-5-code]: https://github.com/GoogleCloudPlatform/nodejs-getting-started/tree/master/5-logging
-[step-6]: https://cloud.google.com/nodejs/getting-started/using-pub-sub
-[step-6-code]: https://github.com/GoogleCloudPlatform/nodejs-getting-started/tree/master/6-pubsub
-[step-7]: https://cloud.google.com/nodejs/getting-started/run-on-compute-engine
-[step-7-code]: https://github.com/GoogleCloudPlatform/nodejs-getting-started/tree/master/7-gce
+Java is a registered trademark of Oracle Corporation and/or its affiliates.
+
