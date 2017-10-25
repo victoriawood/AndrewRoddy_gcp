@@ -1,8 +1,8 @@
-runtime: java8
-api_version: 1
+runtime: java
+env: flexible
 threadsafe: true
-
-handlers:
-- url: /
-  static_files: src/resources/static/index.html
-  upload: src/resources/static/index.html
+automatic_scaling:
+  min_num_instances: 2
+  max_num_instances: 20
+  cpu_utilization:
+    target_utilization: 0.5
