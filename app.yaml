@@ -1,4 +1,4 @@
-runtime: java
+runtime: java8
 env: flexible
 threadsafe: true
 automatic_scaling:
