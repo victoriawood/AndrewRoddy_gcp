@@ -1,3 +1,8 @@
 runtime: java
 api_version: 1
 threadsafe: true
+
+handlers:
+- url: /
+  static_files: src/resources/static/index.html
+  upload: src/resources/static/index.html
