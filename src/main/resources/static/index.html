@@ -3,6 +3,7 @@
 
 <head>
   <title>Andrew Roddy</title>
+  <link rel="stylesheet" href="../css/styles.css">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="description" content="Welcome to the official website for Andrew Roddy: Technical Writer, Experience Designer, and Voice Over Artist">
   <meta name="keywords" content="Andrew Roddy, technical writer, experience designer, voice over, user experience design, UX, narration, audio books, technical writing, technical editing, portfolio">
@@ -26,27 +27,42 @@
 </head>
 
 <body>
-  <div class="container-fluid" style="font-family: 'Georgia'; font-color: black;">
-    <div class="row" role="navigation" style="background-color: #676e74; color: #544f53; font-size: 20px;">
-      <div class="col-sm-3" style="text-align: left; vertical-align: middle; line-height: 40px;"><a href="index.html" style="color: #f9f9f9; text-decoration: none;">ANDREW RODDY</a></div>
-      <div class="col-sm-9" style="font-family: 'Georgia'; font-color: black;">
+  <div id="shell" class="container-fluid">
+    <div id="nav" class="row" role="navigation">
+      <div id="name" class="col-sm-3"><a id="pagetitle" href="index.html">ANDREW RODDY</a></div>
+      <div id="pagelinks" class="col-sm-9">
         <ul class="nav justify-content-end sticky-top">
           <li class="nav-item">
-            <a class="nav-link" href="writer.html" style= "color: #f9f9f9; text-decoration: none;">TECHNICAL WRITER</a>
+            <a id="pagetitle" class="nav-link" href="writer.html">TECHNICAL WRITER</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="designer.html" style= "color: #f9f9f9; text-decoration: none;">EXPERIENCE DESIGNER</a>
+            <a id="pagetitle" class="nav-link" href="designer.html">EXPERIENCE DESIGNER</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="voice.html" style= "color: #f9f9f9; text-decoration: none;">VOICE OVER ARTIST</a>
+            <a id="pagetitle" class="nav-link" href="voice.html">VOICE OVER ARTIST</a>
           </li>
         </ul>
       </div>
     </div>
     <div class="row">
-      <div class="col-sm" style="text-align: center; vertical-align:middle; background-image: url('../img/skyline.png'); height: 500px; font-size:40px; line-height: 500px">
-        ANDREW RODDY
-        <!--<img src="../img/skyline.png" class="img-fluid" alt="Responsive image" style="width: 100%;"> -->
+      <div id="indexcarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#indexcarousel" data-slide-to="1"></li>
+          <li data-target="#indexcarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="../img/skyline.png" alt="Atlanta Skyline">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../img/williams street turner broadcasting.jpg" alt="Williams Street">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../img/roddy-main-placeholder.png">
+          </div>
+        </div>
+
       </div>
     </div>
 
