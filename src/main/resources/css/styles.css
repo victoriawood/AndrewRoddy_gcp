@@ -20,18 +20,25 @@
 #pagelinks{
   font-family: 'Georgia';
   color: black;
+
 }
 
 #pagetitle{
   color: #f9f9f9;
   text-decoration: none;
+
 }
 
+
+
 #indexcarousel{
-  text-align: center; vertical-align:middle;
+  text-align: center;
+  vertical-align: middle;
   height: 500px;
   font-size:40px;
-  line-height: 500px
+  line-height: 500px;
+  width: 100%;
+  padding-right: 0px;
 }
 
 #iam{
@@ -47,4 +54,19 @@
 #content2{
   padding-top:5%;
   padding-left:5%;
+}
+
+.carousel-item {
+  width: 100%;
+}
+
+
+#accordion{
+  width: 100%;
+  position: absolute;
+  padding-bottom: 15px;
+}
+
+.card{
+  width:100%;
 }
