@@ -1,5 +1,18 @@
-function scrollToBottom() {
-  setTimeout(function() {
-    window.scrollTo(0, document.querySelector("#contact-toggle").scrollHeight);
-  }, 1000);
-}
+$('.carousel').carousel({
+  interval: 5000
+});
+
+$(function() {
+  $('a[href*=\\#]:not([href=\\#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});

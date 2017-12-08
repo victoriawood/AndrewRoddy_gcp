@@ -1,72 +1,113 @@
 #shell{
-  font-family: "Georgia";
-  color: black;
+  font-family: 'Sue Ellen Francisco', cursive;
+  color: #f9f9f9;
 }
 
 #nav{
-  background-color: #676e74;
+  background-color: #44a5ff;
   color: #544f53;
   font-size: 20px;
+  position: sticky;
+position: -webkit-sticky;
+z-index: 1;
+top: 0;
+}
+
+#homepage {
+  background-color: #44a5ff;
 }
 
 #name{
-  text-align: left;
+  text-align: center;
   vertical-align: middle;
   line-height: 40px;
   color: #f9f9f9;
   text-decoration: none;
+  width: 100%;
+  font-family: 'Sue Ellen Francisco', cursive;
+
 }
 
 #pagelinks{
-  font-family: 'Georgia';
+  font-family: 'Sue Ellen Francisco', cursive;
   color: black;
-
 }
 
-#pagetitle{
+#pagetitle {
   color: #f9f9f9;
   text-decoration: none;
-
 }
 
-
+#title{
+text-align: center;
+vertical-align: middle;
+}
 
 #indexcarousel{
   text-align: center;
   vertical-align: middle;
-  height: 500px;
   font-size:40px;
   line-height: 500px;
   width: 100%;
   padding-right: 0px;
 }
 
-#iam{
-  padding-top:5%;
-  padding-left:5%;
-}
-
-#content1{
-  padding-top:5%;
-  padding-left:5%;
-}
-
-#content2{
-  padding-top:5%;
-  padding-left:5%;
-}
 
 .carousel-item {
   width: 100%;
+  height: 100%;
 }
 
-
-#accordion{
-  width: 100%;
-  position: absolute;
-  padding-bottom: 15px;
+.featurediv {
+  height: 100vh;
 }
 
-.card{
-  width:100%;
+.desc {
+  background-color: #44a5ff;
+}
+
+p, form {
+  font-size: 26px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-top: 20%;
+  margin-left:10%;
+  margin-right: 10%;
+}
+
+h1 {
+  margin-top: 20%;
+  margin-left:10%;
+  margin-right: 10%;
+  text-align: center;
+  padding-top: 10%;
+}
+
+a:link, a:visited, a:hover {
+  color: #cde0ff;
+  text-decoration: none;
+}
+
+#designerlist{
+  font-size: 26px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-left:10%;
+  margin-right: 10%;
+}
+
+#icon{
+  width: 25%;
+}
+
+embed {
+  margin-top: -70px;
+}
+
+.mediacontent {
+  margin-top: 10%;
+  vertical-align: middle;
+height: 100vh;
+
+  text-align: center;
+  color: #44a5ff;
+  font-size: 26px;
 }
