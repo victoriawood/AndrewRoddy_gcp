@@ -12,7 +12,7 @@ public class Application {
         SpringApplication.run(Application.class, args);
     }
 
-    @Override
+
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/resources/**")
         .addResourceLocations("classpath:/static/resources/")
