@@ -60,10 +60,11 @@ vertical-align: middle;
 
 .featurediv {
   height: 100vh;
+  border-bottom: 2px #44a5ff solid;
 }
 
 .desc {
-  background-color: #44a5ff;
+
 }
 
 p, form {
