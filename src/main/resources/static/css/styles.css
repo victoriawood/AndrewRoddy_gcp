@@ -63,6 +63,11 @@ vertical-align: middle;
   border-bottom: 1px #44a5ff solid;
 }
 
+.contactdiv {
+  height: 50vh;
+  border-bottom: 1px #44a5ff solid;
+}
+
 .desc {
 
 }
