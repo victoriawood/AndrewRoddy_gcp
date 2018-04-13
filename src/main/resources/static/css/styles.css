@@ -104,7 +104,7 @@ a:link, a:visited, a:hover {
   width: 25%;
 }
 
-embed {
+img, embed {
   margin-top: -70px;
   padding-bottom: 10px
 }
