@@ -1,6 +1,6 @@
 #shell{
-  font-family: 'Sue Ellen Francisco', cursive;
-  color: #f9f9f9;
+  font-family: 'Montserrat', sans-serif;
+  color: #1e1e1e;
 }
 
 #nav{
@@ -21,20 +21,20 @@ top: 0;
   text-align: center;
   vertical-align: middle;
   line-height: 40px;
-  color: #f9f9f9;
+  color: #1e1e1e;
   text-decoration: none;
   width: 100%;
-  font-family: 'Sue Ellen Francisco', cursive;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
 #pagelinks{
-  font-family: 'Sue Ellen Francisco', cursive;
+  font-family: 'Montserrat', sans-serif;
   color: black;
 }
 
 #pagetitle {
-  color: #f9f9f9;
+  color: #1e1e1e;
   text-decoration: none;
 }
 
@@ -60,7 +60,7 @@ vertical-align: middle;
 
 .featurediv {
   height: 100vh;
-  border-bottom: 2px #44a5ff solid;
+  border-bottom: 1px #44a5ff solid;
 }
 
 .desc {
@@ -68,8 +68,8 @@ vertical-align: middle;
 }
 
 p, form {
-  font-size: 26px;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 20%;
   margin-left:10%;
   margin-right: 10%;
@@ -89,7 +89,7 @@ a:link, a:visited, a:hover {
 }
 
 #designerlist{
-  font-size: 26px;
+  font-size: 24px;
   font-family: 'Open Sans Condensed', sans-serif;
   margin-left:10%;
   margin-right: 10%;
@@ -110,5 +110,5 @@ height: 100vh;
 
   text-align: center;
   color: #44a5ff;
-  font-size: 26px;
+  font-size: 20px;
 }
