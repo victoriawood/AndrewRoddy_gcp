@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $('#slick-carousel').slick({
-    setting-name: setting-value
+    adaptiveHeight: true,
+    arrows: true
   });
 });
 
