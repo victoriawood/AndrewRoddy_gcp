@@ -123,3 +123,8 @@ img, embed {
 #contact {
   text-align: center;
 }
+
+.slick-carousel {
+  height: 80%;
+  vertical-align: middle;
+}
