@@ -61,7 +61,7 @@ vertical-align: middle;
 
 .featurediv {
   height: 100vh;
-  border-bottom: 1px #44a5ff solid;
+  /*border-bottom: 1px #44a5ff solid;*/
 }
 
 .contactdiv {
