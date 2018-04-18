@@ -106,9 +106,7 @@ a:link, a:visited, a:hover {
 }
 
 img, embed {
-  margin-top: -70px;
   padding-bottom: 10px;
-  width="80%";
 }
 
 .mediacontent {
@@ -130,8 +128,7 @@ img, embed {
 
 
 
-.slick-prev, .slick-next {
-  color: #44a5ff;
+.slick-prev:before, .slick-next:before {
   background: #44a5ff;
 }
 
