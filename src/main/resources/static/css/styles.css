@@ -125,6 +125,13 @@ img, embed {
 }
 
 .slick-carousel {
-  height: 80%;
   vertical-align: middle;
+}
+
+.slick-carousel.wide {
+  width: 70%;
+}
+
+.slick-carousel.tall {
+  height: 70%;
 }
