@@ -107,6 +107,8 @@ a:link, a:visited, a:hover {
 
 img, embed {
   padding-bottom: 10px;
+  margin-left: auto;
+    margin-right: auto;
 }
 
 .mediacontent {
@@ -124,6 +126,7 @@ img, embed {
 .slick-carousel {
   vertical-align: middle;
   text-align: center;
+  width: 90%;
 }
 
 
