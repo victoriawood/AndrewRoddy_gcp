@@ -126,12 +126,13 @@ img, embed {
 
 .slick-carousel {
   vertical-align: middle;
+  text-align: center;
 }
 
-.slick-carousel.wide {
-  width: 70%;
+
+
+.slick-prev, .slick-next {
+  color: #44a5ff;
 }
 
-.slick-carousel.tall {
-  height: 70%;
-}
+
