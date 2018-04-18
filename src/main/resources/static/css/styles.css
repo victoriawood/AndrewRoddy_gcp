@@ -116,7 +116,6 @@ img, embed {
   vertical-align: middle;
   height: 100vh;
   text-align: center;
-  color: #44a5ff;
   font-size: 20px;
 }
 
@@ -133,6 +132,7 @@ img, embed {
 
 .slick-prev, .slick-next {
   color: #44a5ff;
+  background: #44a5ff;
 }
 
 
