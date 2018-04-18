@@ -107,7 +107,8 @@ a:link, a:visited, a:hover {
 
 img, embed {
   margin-top: -70px;
-  padding-bottom: 10px
+  padding-bottom: 10px;
+  width="80%";
 }
 
 .mediacontent {
