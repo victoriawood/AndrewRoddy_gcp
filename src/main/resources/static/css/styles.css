@@ -15,6 +15,7 @@ top: 0;
 
 #homepage {
   background-color: #44a5ff;
+  color: #ffffff;
 }
 
 #name{
@@ -53,10 +54,10 @@ vertical-align: middle;
 }
 
 
-.carousel-item {
+/*.carousel-item {
   width: 100%;
   height: 100%;
-}
+}*/
 
 .featurediv {
   height: 100vh;
@@ -68,8 +69,8 @@ vertical-align: middle;
   border-bottom: 1px #44a5ff solid;
 }
 
-.desc {
-
+#contact .desc p {
+  text-align: center;
 }
 
 p, form {

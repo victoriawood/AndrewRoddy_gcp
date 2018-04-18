@@ -1,5 +1,7 @@
-$('.carousel').carousel({
-  interval: 5000
+$(document).ready(function(){
+  $('#slick-carousel').slick({
+    setting-name: setting-value
+  });
 });
 
 $(function() {
